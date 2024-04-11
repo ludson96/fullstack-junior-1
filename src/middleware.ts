@@ -1,7 +1,6 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import { headers } from 'next/headers'
 
-export function middleware(request: NextApiRequest, response: NextApiResponse) {
+export function middleware() {
   const headersList = headers()
   const secret = headersList.get('secret')
 
