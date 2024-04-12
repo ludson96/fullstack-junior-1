@@ -18,7 +18,7 @@ export default function NavBar() {
   return (
     <nav
     className={`flex 
-    relative
+    absolute
      ${poppins.className} w-[519px] h-[27px] top-[46px] left-[1137px] gap-[48px]
     `}
     >

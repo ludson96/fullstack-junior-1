@@ -1,4 +1,5 @@
 import { Merriweather } from 'next/font/google';
+import Image from 'next/image';
 import NavBar from './NavBar';
 
 const merriweather = Merriweather({
@@ -20,6 +21,15 @@ export default function Head() {
       </div>
 
       <NavBar />
+
+      <div className='absolute w-[24px] h-[24px] top-[48px] left-[1760px]'>
+        <Image
+          src='/images/menu.svg'
+          alt='menu'
+          width={24}
+          height={24}
+          />
+      </div>
 
     </header>
   );
