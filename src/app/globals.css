@@ -6,9 +6,31 @@
   .custom-link-selected {
     @apply text-[#FFFFFF] text-[18px] font-normal leading-[27px] text-left;
   }
+
   .custom-link-unselected {
     @apply text-[#ABABAB] text-[18px] font-normal leading-[27px] text-left;
   }
+
+  .custom-rounded {
+    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
+  }
+
+  .custom-position-group1 {
+    @apply h-[60px] top-[695px] left-[160px]
+  }
+
+  .left-white {
+    @apply text-left text-[#FFFFFF]
+  }
+
+  .center-text {
+    @apply flex items-center justify-center
+  }
+
+  .h27-t18-l27 {
+    @apply h-[27px] text-[18px] leading-[27px]
+  }
+
   @layer components {
     .hover-underline-animation {
       position: relative;
