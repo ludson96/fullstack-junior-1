@@ -1,6 +1,6 @@
-import schema from '../../../utils/validateRequest'
+import schema from '../../../utils/validateRequest';
 
-export async function POST(request: Request) {
+export default async function POST(request: Request) {
   try {
     const person = await request.text();
 
@@ -12,7 +12,7 @@ export async function POST(request: Request) {
           headers: {
             'Content-Type': 'application/json',
           },
-        }
+        },
       );
     }
 
@@ -27,7 +27,7 @@ export async function POST(request: Request) {
           headers: {
             'Content-Type': 'application/json',
           },
-        }
+        },
       );
     }
 
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
           'Content-Type': 'application/json',
         },
         status: 201,
-      }
+      },
     );
   } catch (error) {
     // Se ocorrer algum erro durante o processamento da requisição, retorna uma resposta de erro
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
         headers: {
           'Content-Type': 'application/json',
         },
-      }
+      },
     );
   }
 }

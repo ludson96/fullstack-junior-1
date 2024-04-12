@@ -1,4 +1,4 @@
-export const jobs = [
+export default [
   {
     id: 1,
     job: 'Full Stack Developer',
