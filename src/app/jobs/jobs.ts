@@ -1,4 +1,4 @@
-export default [
+const jobs = [
   {
     id: 1,
     job: 'Full Stack Developer',
@@ -24,3 +24,5 @@ export default [
     status: 'closed',
   },
 ];
+
+export default jobs;

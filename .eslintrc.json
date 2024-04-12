@@ -10,7 +10,8 @@
     "plugin:@typescript-eslint/recommended",
     "airbnb-base",
     // "plugin:mocha/recommended",
-    "airbnb-typescript/base"
+    "airbnb-typescript/base",
+    "next"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -153,6 +154,7 @@
     ],
     "sonarjs/no-inverted-boolean-check": [
       "error"
-    ]
+    ],
+    "import/extensions": "off"
   }
 }
