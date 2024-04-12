@@ -1,26 +1,26 @@
 const navigationData = [
   {
-    id: 'Home',
+    id: '1',
     name: 'Home',
     path: '/',
   },
   {
-    id: 'Features',
+    id: '2',
     name: 'Features',
     path: '/features',
   },
   {
-    id: 'Blog',
+    id: '3',
     name: 'Blog',
     path: '/blog',
   },
   {
-    id: 'Contact',
+    id: '4',
     name: 'Contact',
     path: '/contact',
   },
   {
-    id: 'About Us',
+    id: '5',
     name: 'About Us',
     path: '/about',
   },

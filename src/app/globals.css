@@ -2,4 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+  .custom-link-selected {
+    @apply text-[#FFFFFF] text-[18px] font-normal leading-[27px] text-left;
+  }
+  .custom-link-unselected {
+    @apply text-[#ABABAB] text-[18px] font-normal leading-[27px] text-left;
+  }
+  @layer components {
+    .hover-underline-animation {
+      position: relative;
+      color: #DB2A6B;
+      padding-bottom: 20px;
+    }
+  
+    .hover-underline-animation::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 4px;
+      transform: scaleX(0);
+      bottom: 0;
+      left: 0;
+      background-color: #DB2A6B;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+      border-radius: 6px;
+    }
+  
+    .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+  
+}
