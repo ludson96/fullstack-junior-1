@@ -22,6 +22,7 @@ export default function NavBar() {
      ${poppins.className} w-[519px] h-[27px] top-[46px] left-[1137px] gap-[48px]
     `}
     >
+
       {navigationData.map((data) => {
         const isActive = data.path === pathName;
         return (
@@ -29,7 +30,7 @@ export default function NavBar() {
       key={data.id}
       href={data.path}
       className={
-        `hover-underline-animation
+        `text-[18px] font-normal leading-[27px] text-left hover-underline-animation
       ${isActive ? 'text-[#FFFFFF]' : 'text-[#ABABAB]'}`
     }
       onMouseOver={() => setHoverLink(data.path)}
