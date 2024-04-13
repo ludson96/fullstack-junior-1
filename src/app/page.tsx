@@ -1,4 +1,6 @@
+/* eslint-disable max-lines-per-function */
 import { Merriweather, Poppins } from 'next/font/google';
+import Image from 'next/image';
 
 const merriweather = Merriweather({
   subsets: ['latin', 'latin-ext'],
@@ -7,7 +9,7 @@ const merriweather = Merriweather({
 
 const poppins = Poppins({
   subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '700', '900'],
+  weight: ['300', '400', '600', '700', '900'],
 });
 
 export default function Home() {
@@ -49,14 +51,78 @@ export default function Home() {
 
         </div>
 
-        <div className='w-[148px] h-[40px] top-[705px] left-[432px]'>
+        <div
+        className=
+        'absolute w-[148px] h-[40px] top-[705px] left-[432px] flex items-center justify-between'
+        >
           <p
           className={
-            `${poppins.className} w-[102px] h27-t18-l27 font-semibold left-white underline-offset-1`
+            `h-[27px]
+             ${poppins.className} text-[18px] font-semibold leading-[27px] left-white underline`
           }>
           Learn More
-          </p>
+            </p>
+            <Image
+            src='/images/arrow.svg'
+            alt='image arrow'
+            width={40}
+            height={40}
+            />
 
+        </div>
+
+      </div>
+
+      <div className='flex absolute w-[616px]  h-[64px] top-[899px] left-[160px] gap-[48px]'>
+        <div className='w-[190px] h-[64px] gap-[16px] flex items-centerq'>
+          <Image
+            src='/images/icon-build.svg'
+            alt='image icon build community'
+            width={64}
+            height={64}
+            className='rounded-[16px]'
+          />
+          <p
+            className={
+              `w-[110px] h-[54px]
+               ${poppins.className} text-[18px] font-semibold leading-[27px] left-white`
+            }>
+            Build Community
+          </p>
+        </div>
+
+        <div className='w-[190px] h-[64px] gap-[16px] flex items-centerq'>
+          <Image
+            src='/images/icon-calendar.svg'
+            alt='image icon build community'
+            width={64}
+            height={64}
+            className='rounded-[16px]'
+          />
+          <p
+            className={
+              `w-[110px] h-[54px]
+               ${poppins.className} text-[18px] font-semibold leading-[27px] left-white`
+            }>
+            Build Community
+          </p>
+        </div>
+
+        <div className='w-[190px] h-[64px] gap-[16px] flex items-centerq'>
+          <Image
+            src='/images/icon-info.svg'
+            alt='image icon build community'
+            width={64}
+            height={64}
+            className='rounded-[16px]'
+          />
+          <p
+            className={
+              `w-[110px] h-[54px]
+               ${poppins.className} text-[18px] font-semibold leading-[27px] left-white`
+            }>
+            Build Community
+          </p>
         </div>
 
       </div>
