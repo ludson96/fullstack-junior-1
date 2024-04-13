@@ -25,6 +25,7 @@
     // "mocha"
   ],
   "rules": {
+    "import/prefer-default-export": "off",
     "no-underscore-dangle": "off",
     "no-console": "off",
     "camelcase": "warn",
@@ -42,11 +43,9 @@
       "error",
       {
         "selector": "property",
-        "format": [
-          "strictCamelCase"
-        ],
+        "format": null, // permitir qualquer formato
         "filter": {
-          "regex": "^_",
+          "regex": "^_", // ainda aplicar a regra para propriedades que não começam com "_"
           "match": false
         }
       }

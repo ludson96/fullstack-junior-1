@@ -18,7 +18,7 @@ export default function Home() {
     <main>
       <div className= 'absolute w-[784px] h-[303px] top-[216px] left-[160px]' >
       <h1 className={`${merriweather.className}
-       text-[80px] font-bold leading-[100.56px] left-white`}>
+       not-italic font-bold text-[80px] leading-[101px] text-white`}>
       Build your best community starting from here.
       </h1>
       </div>
