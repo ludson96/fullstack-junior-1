@@ -3,8 +3,8 @@ import './globals.css';
 import Head from '../components/Head';
 
 export const metadata: Metadata = {
-  title: 'Desafio Naranja Labs',
-  description: 'Projeto de desafio para a Naranja Labs',
+  title: 'Naranja Labs Challenge',
+  description: 'Challenge project for Naranja Labs',
 };
 
 export default function RootLayout({

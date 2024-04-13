@@ -22,7 +22,7 @@ export default function Head() {
 
       <NavBar />
 
-      <div className='absolute w-[24px] h-[24px] top-[48px] left-[1760px]'>
+      <div className='absolute w-[24px] h-[24px] top-[48px] left-[1736px]'>
         <Image
           src='/images/menu.svg'
           alt='menu'

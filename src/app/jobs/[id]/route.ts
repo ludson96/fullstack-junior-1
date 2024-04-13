@@ -1,6 +1,6 @@
-import jobs from '../jobs';
+import jobs from '../../../data/jobs';
 
-export default async function GET(request: Request, { params }: { params: { id: string } }) {
+export default async function GET(_request: Request, { params }: { params: { id: string } }) {
   if (params.id === undefined || !params.id) {
     return Response.json({ message: 'Job ID is required.' }, { status: 400 });
   }

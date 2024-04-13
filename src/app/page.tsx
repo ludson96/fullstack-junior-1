@@ -1,17 +1,8 @@
-/* eslint-disable max-len */
 /* eslint-disable max-lines-per-function */
-import { Merriweather, Poppins } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const merriweather = Merriweather({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '700', '900'],
-});
 
-const poppins = Poppins({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '600', '700', '900'],
-});
 
 export default function Home() {
   return (
@@ -35,9 +26,9 @@ export default function Home() {
 
       <div className='w-[420px] custom-position-group1 custom-rounded'>
         <div className='w-[240px] custom-position-group1 custom-rounded'>
-          <div
-          className='absolute
-           w-[240px] h-[60px] top-[695px] left-[160px] custom-rounded bg-[#DB2A6B] center-text'
+          <button
+          className={`absolute 
+           w-[240px] h-[60px] top-[695px] left-[160px] custom-rounded bg-[#DB2A6B] center-text hover:bg-red-700`}
           >
           <p className={
             `${poppins.className}
@@ -45,13 +36,13 @@ export default function Home() {
             }>
             Get Started
           </p>
-          </div>
+          </button>
 
         </div>
 
-        <div
-        className=
-        'absolute w-[148px] h-[40px] top-[705px] left-[432px] flex items-center justify-between'
+        <Link
+        className='absolute w-[148px] h-[40px] top-[705px] left-[432px] flex items-center justify-between'
+        href='/'
         >
 
           <p
@@ -69,7 +60,7 @@ export default function Home() {
             className='mt-1'
           />
 
-        </div>
+        </Link>
 
       </div>
 
