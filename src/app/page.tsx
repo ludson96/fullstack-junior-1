@@ -15,10 +15,7 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <main
-    className="width-[784px]
-     height-[539px] top-[216px] left-[160px] custom-rounded"
-    >
+    <main>
       <div className= 'absolute w-[784px] h-[303px] top-[216px] left-[160px]' >
       <h1 className={`${merriweather.className}
        text-[80px] font-bold leading-[100.56px] left-white`}>
@@ -133,9 +130,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div
-      className='sticky w-[1102px] h-[1216px] top-[174px] left-[971px]' */}
-      {/* > */}
         <Image
           src='/images/personBlue.svg'
           alt='image person background blue'
@@ -176,10 +170,17 @@ export default function Home() {
           className='absolute w-[240px] h-[509px] top-[310px] left-[1520px]'
         />
 
-        <div className='absolute w-[850px] h-[850px] left-[1217px] top-[540px] opacity-[0.25] border border-solid border-[#E1E1E1] border-t-1'>
+      <div className='absolute w-[949px] h-[906px] top-[174px] left-[971px] overflow-hidden'>
+
+        <div className='absolute w-[850px] h-[850px] left-[246px] top-[366px] -z-10 opacity-25'>
+          <div className='w-full h-full border border-solid border-[#E1E1E1] rounded-full'></div>
         </div>
 
-      {/* </div> */}
+        <div className='absolute w-[1102px] h-[1102px] left-[0px] top-[89px] -z-10 opacity-25'>
+          <div className='w-full h-full border border-solid border-[#E1E1E1] rounded-full'></div>
+        </div>
+
+      </div>
 
     </main>
   );
