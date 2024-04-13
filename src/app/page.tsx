@@ -107,10 +107,6 @@ export default function Home() {
             Share Events
           </p>
         </div>
-{/* /* Inside auto layout */ }
-{/* // flex: none; */}
-{/* // order: 2; */}
-{/* // flex-grow: 0; */}
 
         <div className='w-[189px] h-[64px] gap-[16px] flex flex-row items-center p-0'>
           <Image
