@@ -11,24 +11,78 @@
     @apply text-[#ABABAB] text-[18px] font-normal leading-[27px] text-left;
   }
 
-  .custom-rounded {
-    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
-  }
-
-  .custom-position-group1 {
-    @apply h-[60px] top-[695px] left-[160px]
-  }
-
+  
+  
+  
+  
+  
+  
+  /* Comecei aqui */
+  /* Utilies */
   .left-white {
     @apply text-left text-[#FFFFFF]
   }
-
+  
   .center-text {
     @apply flex items-center justify-center
   }
 
-  .h27-t18-l27 {
-    @apply h-[27px] text-[18px] leading-[27px]
+  .custom-rounded {
+    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
+  }
+
+  /* Components */
+  
+  .custom-div-build {
+    @apply absolute w-[784px] h-[303px] top-[216px] left-[160px]
+  }
+  
+  .custom-h1-build {
+    @apply not-italic font-bold text-[80px] leading-[101px] text-white
+  }
+  
+  .custom-div-meet {
+    @apply absolute w-[648px] h-[120px] top-[543px] left-[160px] opacity-50
+  }
+  
+  .custom-p-meet {
+    @apply text-[24px] font-normal leading-[40px] left-white
+  }
+  
+  .custom-div-cont-group1 {
+    @apply w-[420px] h-[60px] top-[695px] left-[160px] custom-rounded
+  }
+
+  .custom-div-btn {
+   @apply w-[240px] h-[60px] top-[695px] left-[160px] custom-rounded
+  }
+
+  .custom-btn {
+    @apply absolute w-[240px] h-[60px] top-[695px] left-[160px]  bg-[#DB2A6B] custom-rounded center-text hover:bg-red-700
+  }
+
+  .custom-p-started {
+    @apply h-[27px] text-[18px] leading-[27px] font-normal left-white w-[103px]
+  }
+
+  .custom-link {
+    @apply absolute w-[148px] h-[40px] top-[705px] left-[432px] flex items-center justify-between
+  }
+
+  .custom-p-learn {
+    @apply h-[27px] text-[18px] font-semibold leading-[27px] left-white underline
+  }
+
+  .custom-cont-div-services {
+    @apply flex gap-[48px] absolute w-[616px] h-[64px] top-[899px] left-[160px] 
+  }
+
+  .custom-div-community {
+    @apply flex items-center gap-[16px] w-[190px] h-[64px]
+  }
+
+  .custom-p-community {
+    @apply w-[110px] h-[54px] text-[18px] font-semibold leading-[27px] left-white
   }
 
   @layer components {
