@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable max-lines-per-function */
 import { Merriweather, Poppins } from 'next/font/google';
 import Image from 'next/image';
@@ -55,28 +56,30 @@ export default function Home() {
         className=
         'absolute w-[148px] h-[40px] top-[705px] left-[432px] flex items-center justify-between'
         >
+
           <p
           className={
             `h-[27px]
              ${poppins.className} text-[18px] font-semibold leading-[27px] left-white underline`
           }>
           Learn More
-            </p>
-            <Image
+          </p>
+          <Image
             src='/images/arrow.svg'
             alt='image arrow'
             width={40}
             height={40}
-            />
+            className='mt-1'
+          />
 
         </div>
 
       </div>
 
       <div className='flex absolute w-[616px]  h-[64px] top-[899px] left-[160px] gap-[48px]'>
-        <div className='w-[190px] h-[64px] gap-[16px] flex items-centerq'>
+        <div className='w-[190px] h-[64px] gap-[16px] flex items-center'>
           <Image
-            src='/images/icon-build.svg'
+            src='/images/iconBuild.svg'
             alt='image icon build community'
             width={64}
             height={64}
@@ -91,9 +94,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='w-[190px] h-[64px] gap-[16px] flex items-centerq'>
+        <div className='w-(141px) h-[64px] gap-[16px] flex items-center'>
           <Image
-            src='/images/icon-calendar.svg'
+            src='/images/iconCalendar.svg'
             alt='image icon build community'
             width={64}
             height={64}
@@ -104,28 +107,79 @@ export default function Home() {
               `w-[110px] h-[54px]
                ${poppins.className} text-[18px] font-semibold leading-[27px] left-white`
             }>
-            Build Community
+            Share Events
           </p>
         </div>
+{/* /* Inside auto layout */ }
+{/* // flex: none; */}
+{/* // order: 2; */}
+{/* // flex-grow: 0; */}
 
-        <div className='w-[190px] h-[64px] gap-[16px] flex items-centerq'>
+        <div className='w-[189px] h-[64px] gap-[16px] flex flex-row items-center p-0'>
           <Image
-            src='/images/icon-info.svg'
+            src='/images/iconInfo.svg'
             alt='image icon build community'
             width={64}
             height={64}
-            className='rounded-[16px]'
+            className='flex-none order-none flex-grow-0'
           />
           <p
             className={
-              `w-[110px] h-[54px]
+              `w-[109px] h-[54px]
                ${poppins.className} text-[18px] font-semibold leading-[27px] left-white`
             }>
-            Build Community
+            Get Information
           </p>
         </div>
-
       </div>
+
+      {/* <div
+      className='sticky w-[1102px] h-[1216px] top-[174px] left-[971px]' */}
+      {/* > */}
+        <Image
+          src='/images/personBlue.svg'
+          alt='image person background blue'
+          width={240}
+          height={240}
+          className='absolute w-[240px] h-[240px] top-[174px] left-[1248px]'
+        />
+
+        <Image
+          src='/images/personPurple.svg'
+          alt='image person background blue'
+          width={240}
+          height={509}
+          className='absolute w-[240px] h-[509px] top-[174px] left-[976px]'
+        />
+
+        <Image
+          src='/images/personPink.svg'
+          alt='image person background blue'
+          width={240}
+          height={240}
+          className='absolute w-[240px] h-[240px] top-[715px] left-[976px]'
+        />
+
+        <Image
+          src='/images/personOrange.svg'
+          alt='image person background blue'
+          width={240}
+          height={509}
+          className='absolute w-[240px] h-[509px] top-[446px] left-[1248px]'
+        />
+
+        <Image
+          src='/images/personYellow.svg'
+          alt='image person background blue'
+          width={240}
+          height={509}
+          className='absolute w-[240px] h-[509px] top-[310px] left-[1520px]'
+        />
+
+        <div className='absolute w-[850px] h-[850px] left-[1217px] top-[540px] opacity-[0.25] border border-solid border-[#E1E1E1] border-t-1'>
+        </div>
+
+      {/* </div> */}
 
     </main>
   );
