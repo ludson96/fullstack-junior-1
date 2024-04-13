@@ -73,8 +73,8 @@ export default function Home() {
 
       </div>
 
-      <div className='flex absolute w-[616px]  h-[64px] top-[899px] left-[160px] gap-[48px]'>
-        <div className='w-[190px] h-[64px] gap-[16px] flex items-center'>
+      <div className='flex gap-[48px] absolute w-[616px]  h-[64px] top-[899px] left-[160px] '>
+        <div className='flex items-center gap-[16px] w-[190px] h-[64px]'>
           <Image
             src='/images/iconBuild.svg'
             alt='image icon build community'
@@ -91,7 +91,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='w-(141px) h-[64px] gap-[16px] flex items-center'>
+        <div className='flex items-center gap-[16px] w-[141px] h-[64px]  '>
           <Image
             src='/images/iconCalendar.svg'
             alt='image icon build community'
@@ -101,8 +101,8 @@ export default function Home() {
           />
           <p
             className={
-              `w-[110px] h-[54px]
-               ${poppins.className} text-[18px] font-semibold leading-[27px] left-white`
+              `w-[61px] h-[54px]
+               ${poppins.className} font-semibold text-[18px] leading-[27px] text-white`
             }>
             Share Events
           </p>
