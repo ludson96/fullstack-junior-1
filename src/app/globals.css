@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .left-white {
+    @apply text-left text-[#FFFFFF]
+  }
+  
+  .center-text {
+    @apply flex items-center justify-center
+  }
+
+  .custom-rounded {
+    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
+  }
+
+  .custom-abs-w {
+    @apply absolute w-[240px]
+  }
+
+  .opac-z-10 {
+    @apply -z-10 opacity-25
+  }
+}
+
 @layer components {
   .custom-link-selected {
     @apply text-[#FFFFFF] text-[18px] font-normal leading-[27px] text-left;
@@ -18,20 +40,7 @@
   
   
   /* Comecei aqui */
-  /* Utilies */
-  .left-white {
-    @apply text-left text-[#FFFFFF]
-  }
   
-  .center-text {
-    @apply flex items-center justify-center
-  }
-
-  .custom-rounded {
-    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
-  }
-
-  /* Components */
   
   .custom-div-build {
     @apply absolute w-[784px] h-[303px] top-[216px] left-[160px]
@@ -83,6 +92,58 @@
 
   .custom-p-community {
     @apply w-[110px] h-[54px] text-[18px] font-semibold leading-[27px] left-white
+  }
+
+  .custom-cont-div-img-share {
+    @apply flex gap-[16px] w-[141px] h-[64px] items-center
+  }
+
+  .custom-p-share {
+    @apply w-[61px] h-[54px] font-semibold text-[18px] leading-[27px] text-white
+  }
+
+  .custom-cont-div-info {
+    @apply w-[189px] h-[64px] gap-[16px] flex flex-row items-center p-0
+  }
+
+  .custom-p-info {
+    @apply w-[109px] h-[54px] text-[18px] font-semibold leading-[27px] left-white
+  }
+
+  .custom-img-pblue {
+    @apply custom-abs-w h-[240px] top-[174px] left-[1248px]
+  }
+
+  .custom-img-ppurple {
+    @apply custom-abs-w h-[509px] top-[174px] left-[976px]
+  }
+
+  .custom-img-ppink {
+    @apply custom-abs-w h-[240px] top-[715px] left-[976px]
+  }
+
+  .custom-img-porange {
+    @apply custom-abs-w h-[509px] top-[446px] left-[1248px]
+  }
+
+  .custom-img-yellow {
+    @apply custom-abs-w h-[509px] top-[310px] left-[1520px]
+  }
+
+  .custom-cont-div-ellipse {
+    @apply absolute w-[949px] h-[906px] top-[174px] left-[971px] overflow-hidden 
+  }
+
+  .custom-div-medium-ellipse {
+    @apply absolute w-[850px] h-[850px] left-[246px] top-[366px] opac-z-10
+  }
+
+  .custom-ellipse {
+    @apply w-full h-full border border-solid border-[#E1E1E1] rounded-full
+  }
+
+  .custom-div-big-ellipse {
+    @apply absolute w-[1102px] h-[1102px] left-[0px] top-[89px] opac-z-10
   }
 
   @layer components {

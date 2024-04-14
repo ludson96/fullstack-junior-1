@@ -49,7 +49,7 @@ export default function Home() {
 
       {/* Services */}
       <div className='custom-cont-div-services'>
-
+        {/* Service - Build Community */}
         <div className='custom-div-community'>
 
           <Image
@@ -65,8 +65,8 @@ export default function Home() {
           </p>
 
         </div>
-
-        <div className='flex items-center gap-[16px] w-[141px] h-[64px]  '>
+        {/* Service - Share Events */}
+        <div className='custom-cont-div-img-share'>
           <Image
             src='/images/iconCalendar.svg'
             alt='image icon build community'
@@ -74,16 +74,12 @@ export default function Home() {
             height={64}
             className='rounded-[16px]'
           />
-          <p
-            className={
-              `w-[61px] h-[54px]
-               ${poppins.className} font-semibold text-[18px] leading-[27px] text-white`
-            }>
+          <p className={`${poppins.className} custom-p-share`}>
             Share Events
           </p>
         </div>
-
-        <div className='w-[189px] h-[64px] gap-[16px] flex flex-row items-center p-0'>
+        {/* Service - Get information */}
+        <div className='custom-cont-div-info'>
           <Image
             src='/images/iconInfo.svg'
             alt='image icon build community'
@@ -91,22 +87,19 @@ export default function Home() {
             height={64}
             className='flex-none order-none flex-grow-0'
           />
-          <p
-            className={
-              `w-[109px] h-[54px]
-               ${poppins.className} text-[18px] font-semibold leading-[27px] left-white`
-            }>
+          <p className={`${poppins.className} custom-p-info`}>
             Get Information
           </p>
         </div>
       </div>
-
+        {/* Content */}
+        {/* Imagens de pessoas */}
         <Image
           src='/images/personBlue.svg'
           alt='image person background blue'
           width={240}
           height={240}
-          className='absolute w-[240px] h-[240px] top-[174px] left-[1248px]'
+          className='custom-img-pblue'
         />
 
         <Image
@@ -114,7 +107,7 @@ export default function Home() {
           alt='image person background blue'
           width={240}
           height={509}
-          className='absolute w-[240px] h-[509px] top-[174px] left-[976px]'
+          className='custom-img-ppurple'
         />
 
         <Image
@@ -122,7 +115,7 @@ export default function Home() {
           alt='image person background blue'
           width={240}
           height={240}
-          className='absolute w-[240px] h-[240px] top-[715px] left-[976px]'
+          className='custom-img-ppink'
         />
 
         <Image
@@ -130,7 +123,7 @@ export default function Home() {
           alt='image person background blue'
           width={240}
           height={509}
-          className='absolute w-[240px] h-[509px] top-[446px] left-[1248px]'
+          className='custom-img-porange'
         />
 
         <Image
@@ -138,21 +131,22 @@ export default function Home() {
           alt='image person background blue'
           width={240}
           height={509}
-          className='absolute w-[240px] h-[509px] top-[310px] left-[1520px]'
+          className='custom-img-yellow'
         />
+      {/* Elipse */}
+      <div className='custom-cont-div-ellipse'>
 
-      <div className='absolute w-[949px] h-[906px] top-[174px] left-[971px] overflow-hidden'>
-
-        <div className='absolute w-[850px] h-[850px] left-[246px] top-[366px] -z-10 opacity-25'>
-          <div className='w-full h-full border border-solid border-[#E1E1E1] rounded-full'></div>
+        {/* Elipse média  */}
+        <div className='custom-div-medium-ellipse'>
+          <div className='custom-ellipse'></div>
         </div>
 
-        <div className='absolute w-[1102px] h-[1102px] left-[0px] top-[89px] -z-10 opacity-25'>
-          <div className='w-full h-full border border-solid border-[#E1E1E1] rounded-full'></div>
+        {/* Elipse grande */}
+        <div className='custom-div-big-ellipse'>
+          <div className='custom-ellipse'></div>
         </div>
 
       </div>
-
     </main>
   );
 }
