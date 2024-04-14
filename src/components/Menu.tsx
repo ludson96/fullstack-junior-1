@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import navigationData from '@/data/navigationData';
+import navigationData from '../data/navigationData';
 import { poppins } from '../utils/fonts';
 
 // Este componente renderiza o menu de navegação da aplicação.
