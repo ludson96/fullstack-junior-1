@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { merriweather, poppins } from '../utils/fonts';
 
+// Este componente renderiza a página inicial da aplicação.
 export default function Home() {
   return (
     <main>

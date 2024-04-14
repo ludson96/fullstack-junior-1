@@ -1,3 +1,4 @@
+// Define os dados de navegação para o menu no cabeçalho
 const navigationData = [
   {
     id: '1',

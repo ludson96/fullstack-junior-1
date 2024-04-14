@@ -1,3 +1,4 @@
+// Este arquivo contém os dados dos Jobs que serão exibidos na aplicação.
 const jobs = [
   {
     id: 1,

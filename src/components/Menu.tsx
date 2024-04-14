@@ -1,43 +1,37 @@
 'use client';
 
-import { Poppins } from 'next/font/google';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import navigationData from '@/data/navigationData';
+import { poppins } from '../utils/fonts';
 
-const poppins = Poppins({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-});
-
+// Este componente renderiza o menu de navegação da aplicação.
 export default function Menu() {
   const pathName = usePathname() || '/';
 
   const [, setHoverLink] = useState(pathName);
   return (
-    // eslint-disable-next-line max-len
-    <nav className={`flex absolute ${poppins.className} w-[519px] h-[27px] top-[46px] left-[1137px] gap-[48px]`}>
-
+    <nav className={`${poppins.className} custom-nav`}>
       {navigationData.map((data) => {
         const isActive = data.path === pathName;
-        return (
+        // Se a rota atual for a mesma que a rota do link, a cor do texto é branco, caso contrário, é cinza.
+        const isSelect = isActive ? 'text-[#FFFFFF]' : 'text-[#ABABAB]';
 
+        return (
           <Link
           key={data.id}
           href={data.path}
-          // eslint-disable-next-line max-len
-          className={`text-[18px] font-normal leading-[27px] text-left hover-underline-animation ${isActive ? 'text-[#FFFFFF]' : 'text-[#ABABAB]'}`}
+          className={`custom-nav-link hover-underline-animation ${isSelect}`}
+          // Quando o mouse passa por cima do link, realiza a animação de underline.
           onMouseOver={() => setHoverLink(data.path)}
+          // Quando o mouse sai de cima do link, a animação se move para a direita.
           onMouseLeave={() => setHoverLink(pathName)}
           >
-
             {data.name}
           </Link>
-
         );
       })}
-
     </nav>
   );
 }

@@ -131,7 +131,6 @@
   }
 
   /* Head.tsx */
-
   .custom-header {
     @apply w-[1920px] h-[120px] rounded-r-lg
   }
@@ -146,6 +145,15 @@
 
   .custom-head-cont-div-img-menu {
     @apply absolute w-[24px] h-[24px] top-[48px] left-[1736px]
+  }
+
+  /* Menu.tsx */
+  .custom-nav {
+    @apply flex absolute w-[519px] h-[27px] top-[46px] left-[1137px] gap-[48px]
+  }
+
+  .custom-nav-link {
+    @apply text-[18px] font-normal leading-[27px] text-left
   }
 }
 
