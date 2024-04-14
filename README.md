@@ -2,6 +2,9 @@
 
 Repositório possuí projeto desenvolvido para o `Desafio Técnico - Full Stack Junior`, para a empresa `NaranjaLabs`.
 
+## Atenção 🚨 ⚠️
+Por algum motivo as rotas especificas e de post estão como `/job` ao invés de `/jobs`. Não sei se foi um erro ou uma pegadinha, mas resolvi seguir conforme as instruções.
+
 ## Informações pessoais
 
 - Nome: Ludson Pereira dos Santos.
