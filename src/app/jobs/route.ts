@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
 import jobs from '../../data/jobs';
 
-export default async function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
 
   const query = searchParams.get('level');

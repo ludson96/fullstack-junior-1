@@ -1,0 +1,96 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Naranja Labs - desafio técnico",
+    "dateExported": "2024-04-14T18:14:51.490Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "551e774c-f99f-431c-be5c-5f777fef47eb",
+            "colId": "41d9caa8-4463-47aa-9b98-98ab55b3fd3f",
+            "containerId": "",
+            "name": "Retorna todos os jobs (/jobs)",
+            "url": "http://localhost:3000/jobs",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-14T17:58:33.380Z",
+            "modified": "2024-04-14T17:58:33.380Z",
+            "headers": [
+                {
+                    "name": "secret",
+                    "value": "naranja-labs"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "936e1ea9-174b-4b41-a9c6-d0dbf5e298a4",
+            "colId": "41d9caa8-4463-47aa-9b98-98ab55b3fd3f",
+            "containerId": "",
+            "name": "Retorna jobs level junior (/jobs?level=Junior)",
+            "url": "http://localhost:3000/jobs?level=Junior",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-14T17:58:51.480Z",
+            "modified": "2024-04-14T17:58:51.480Z",
+            "headers": [
+                {
+                    "name": "secret",
+                    "value": "naranja-labs"
+                }
+            ],
+            "params": [
+                {
+                    "name": "level",
+                    "value": "Junior",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ae9daa98-cc55-4353-8046-614a43e52ac0",
+            "colId": "41d9caa8-4463-47aa-9b98-98ab55b3fd3f",
+            "containerId": "",
+            "name": "Retorna um job específico pelo id (/job/[id])",
+            "url": "http://localhost:3000/job/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-14T18:03:48.421Z",
+            "modified": "2024-04-14T18:03:48.421Z",
+            "headers": [
+                {
+                    "name": "secret",
+                    "value": "naranja-labs"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b73701d8-d93a-4dd5-b9e9-53d9e9bc20d9",
+            "colId": "41d9caa8-4463-47aa-9b98-98ab55b3fd3f",
+            "containerId": "",
+            "name": "http://localhost:3000/job/submit",
+            "url": "http://localhost:3000/job/submit",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-14T18:03:57.315Z",
+            "modified": "2024-04-14T18:03:57.315Z",
+            "headers": [
+                {
+                    "name": "secret",
+                    "value": "naranja-labs"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Ludson\",\n  \"age\": 15,\n  \"phone\": \"string\",\n  \"state\":\"string\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
