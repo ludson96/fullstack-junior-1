@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={'relative w-[1920px] h-[1080px] bg-[#2B2D38]'}>
+      <body>
         <Head />
         {children}
       </body>

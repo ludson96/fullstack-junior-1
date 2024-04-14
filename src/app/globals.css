@@ -2,25 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .left-white {
-    @apply text-left text-[#FFFFFF]
-  }
-  
-  .center-text {
-    @apply flex items-center justify-center
-  }
-
-  .custom-rounded {
-    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
-  }
-
-  .custom-abs-w {
-    @apply absolute w-[240px]
-  }
-
-  .opac-z-10 {
-    @apply -z-10 opacity-25
+@layer base {
+  body {
+    @apply relative w-[1920px] h-[1080px] bg-[#2B2D38]  
   }
 }
 
@@ -145,32 +129,55 @@
   .custom-div-big-ellipse {
     @apply absolute w-[1102px] h-[1102px] left-[0px] top-[89px] opac-z-10
   }
+}
 
-  @layer components {
-    .hover-underline-animation {
-      position: relative;
-      color: #DB2A6B;
-      padding-bottom: 20px;
-    }
+/* Animação do menu */
+@layer components {
+  .hover-underline-animation {
+    position: relative;
+    color: #DB2A6B;
+    padding-bottom: 20px;
+  }
+
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    transform: scaleX(0);
+    bottom: -12px;
+    left: 0;
+    background-color: #DB2A6B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-radius: 6px;
+  }
+
+  .hover-underline-animation:hover::after {
+    position: absolute;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@layer utilities {
+  .left-white {
+    @apply text-left text-[#FFFFFF]
+  }
   
-    .hover-underline-animation::after {
-      content: "";
-      position: absolute;
-      width: 32px;
-      height: 4px;
-      transform: scaleX(0);
-      bottom: -12px;
-      left: 0;
-      background-color: #DB2A6B;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-      border-radius: 6px;
-    }
-  
-    .hover-underline-animation:hover::after {
-      position: absolute;
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+  .center-text {
+    @apply flex items-center justify-center
+  }
+
+  .custom-rounded {
+    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
+  }
+
+  .custom-abs-w {
+    @apply absolute w-[240px]
+  }
+
+  .opac-z-10 {
+    @apply -z-10 opacity-25
   }
 }
