@@ -9,23 +9,7 @@
 }
 
 @layer components {
-  .custom-link-selected {
-    @apply text-[#FFFFFF] text-[18px] font-normal leading-[27px] text-left;
-  }
-
-  .custom-link-unselected {
-    @apply text-[#ABABAB] text-[18px] font-normal leading-[27px] text-left;
-  }
-
-  
-  
-  
-  
-  
-  
-  /* Comecei aqui */
-  
-  /* Page */
+  /* Home page */
   .custom-div-build {
     @apply absolute w-[784px] h-[303px] top-[216px] left-[160px]
   }

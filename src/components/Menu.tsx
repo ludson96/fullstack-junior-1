@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import navigationData from '../data/navigationData';
-import { poppins } from '../utils/fonts';
 
 // Este componente renderiza o menu de navegação da aplicação.
 export default function Menu() {
@@ -12,7 +11,7 @@ export default function Menu() {
 
   const [, setHoverLink] = useState(pathName);
   return (
-    <nav className={`${poppins.className} custom-nav`}>
+    <nav className={'custom-nav'}>
       {navigationData.map((data) => {
         const isActive = data.path === pathName;
         // Se a rota atual for a mesma que a rota do link, a cor do texto é branco, caso contrário, é cinza.

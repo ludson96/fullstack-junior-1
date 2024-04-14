@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { poppins } from '../utils/fonts';
 
 export default function ServiceGet() {
   return (
@@ -13,7 +12,7 @@ export default function ServiceGet() {
         className='flex-none order-none flex-grow-0'
       />
 
-      <p className={`${poppins.className} custom-p-info`}>
+      <p className={'custom-p-info'}>
         Get Information
       </p>
 

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { poppins } from '../utils/fonts';
 
 // Este componente renderiza o service de Build Community.
 export default function ServiceBuild() {
@@ -14,7 +13,7 @@ export default function ServiceBuild() {
         className='rounded-[16px]'
       />
 
-      <p className={`${poppins.className} custom-p-community`}>
+      <p className={'custom-p-community'}>
         Build Community
       </p>
 

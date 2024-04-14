@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { poppins } from '../utils/fonts';
 
 // Este componente renderiza o service de Share Events.
 export default function ServiceShare() {
@@ -14,7 +13,7 @@ export default function ServiceShare() {
         className='rounded-[16px]'
       />
 
-      <p className={`${poppins.className} custom-p-share`}>
+      <p className={'custom-p-share'}>
         Share Events
       </p>
 
