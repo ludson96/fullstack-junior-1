@@ -1,28 +1,26 @@
-import { Merriweather } from 'next/font/google';
 import Image from 'next/image';
-import NavBar from './NavBar';
+import Menu from './Menu';
+import { merriweather } from '../utils/fonts';
 
-const merriweather = Merriweather({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '700', '900'],
-});
-
+// Este componente renderiza o cabeçalho da aplicação.
 export default function Head() {
   return (
-    <header className='w-[1920px] h-[120px] rounded-r-lg'>
-      <div className=
-      {`absolute ${merriweather.className} w-[235px] h-[45px] top-[37px] left-[160px] gap-0`
-      }>
-        <p className='text-red-500 font-bold text-[36px] leading-[45.25px] text-left'>
+    <header className='custom-header'>
+
+      {/* Título no cabeçalho */}
+      <div className={`${merriweather.className} custom-head-cont-div-title`}>
+        <p className='custom-head-p-title'>
           Gath
         <span className="text-[#FFFFFF]">Session</span>
         .
         </p>
       </div>
 
-      <NavBar />
+      {/* Menu interativo no cabeçalho */}
+      <Menu />
 
-      <div className='absolute w-[24px] h-[24px] top-[48px] left-[1736px]'>
+      {/* Botão de menu no cabeçalho */}
+      <div className='custom-head-cont-div-img-menu'>
         <Image
           src='/images/menu.svg'
           alt='menu'
@@ -30,7 +28,6 @@ export default function Head() {
           height={24}
           />
       </div>
-
     </header>
   );
 }

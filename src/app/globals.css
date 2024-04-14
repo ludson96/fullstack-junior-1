@@ -25,7 +25,7 @@
   
   /* Comecei aqui */
   
-  
+  /* Page */
   .custom-div-build {
     @apply absolute w-[784px] h-[303px] top-[216px] left-[160px]
   }
@@ -128,6 +128,24 @@
 
   .custom-div-big-ellipse {
     @apply absolute w-[1102px] h-[1102px] left-[0px] top-[89px] opac-z-10
+  }
+
+  /* Head.tsx */
+
+  .custom-header {
+    @apply w-[1920px] h-[120px] rounded-r-lg
+  }
+
+  .custom-head-cont-div-title {
+    @apply absolute w-[235px] h-[45px] top-[37px] left-[160px] gap-0
+  }
+
+  .custom-head-p-title {
+    @apply text-red-500 font-bold text-[36px] leading-[45.25px] text-left
+  }
+
+  .custom-head-cont-div-img-menu {
+    @apply absolute w-[24px] h-[24px] top-[48px] left-[1736px]
   }
 }
 
