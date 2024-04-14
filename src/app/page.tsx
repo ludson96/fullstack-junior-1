@@ -1,60 +1,18 @@
 /* eslint-disable max-lines-per-function */
 import Image from 'next/image';
 import Title from '../components/Title';
-import { poppins } from '../utils/fonts';
+import Services from '../components/Services';
 
 // Este componente renderiza a página inicial da aplicação.
 export default function Home() {
   return (
     <main>
-
+      {/* Título */}
       <Title />
 
       {/* Services */}
-      <div className='custom-cont-div-services'>
-        {/* Service - Build Community */}
-        <div className='custom-div-community'>
+      <Services />
 
-          <Image
-            src='/images/iconBuild.svg'
-            alt='image icon build community'
-            width={64}
-            height={64}
-            className='rounded-[16px]'
-          />
-
-          <p className={`${poppins.className} custom-p-community`}>
-            Build Community
-          </p>
-
-        </div>
-        {/* Service - Share Events */}
-        <div className='custom-cont-div-img-share'>
-          <Image
-            src='/images/iconCalendar.svg'
-            alt='image icon build community'
-            width={64}
-            height={64}
-            className='rounded-[16px]'
-          />
-          <p className={`${poppins.className} custom-p-share`}>
-            Share Events
-          </p>
-        </div>
-        {/* Service - Get information */}
-        <div className='custom-cont-div-info'>
-          <Image
-            src='/images/iconInfo.svg'
-            alt='image icon build community'
-            width={64}
-            height={64}
-            className='flex-none order-none flex-grow-0'
-          />
-          <p className={`${poppins.className} custom-p-info`}>
-            Get Information
-          </p>
-        </div>
-      </div>
         {/* Content */}
         {/* Imagens de pessoas */}
         <Image
