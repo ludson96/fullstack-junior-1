@@ -1,3 +1,4 @@
+// Importa os tipos de fontes Merriweather e Poppins do Google Fonts para reuso.
 import { Merriweather, Poppins } from 'next/font/google';
 
 export const merriweather = Merriweather({

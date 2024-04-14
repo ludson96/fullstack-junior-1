@@ -1,5 +1,7 @@
+// Este middleware será executado antes da solicitação ser enviada ao manipulador.
 import { headers } from 'next/headers';
 
+// Este middleware valida a secret passada pelo headers da requisição.
 export default function middleware() {
   const headersList = headers();
   const secret = headersList.get('secret');
@@ -14,6 +16,7 @@ export default function middleware() {
   }
 }
 
+// Configuração do middleware.
 export const config = {
   matcher: ['/jobs', '/job/:path*'],
 };
