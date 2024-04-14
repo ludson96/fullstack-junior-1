@@ -1,52 +1,14 @@
 /* eslint-disable max-lines-per-function */
 import Image from 'next/image';
-import Link from 'next/link';
-import { merriweather, poppins } from '../utils/fonts';
+import Title from '../components/Title';
+import { poppins } from '../utils/fonts';
 
 // Este componente renderiza a página inicial da aplicação.
 export default function Home() {
   return (
     <main>
-      {/* Título principal */}
-      <div className= 'custom-div-build' >
-        <h1 className={`custom-h1-build ${merriweather.className}`}>
-        Build your best community starting from here.
-        </h1>
-      </div>
-      {/* Paragrafo abaixo do título  */}
-      <div className='custom-div-meet'>
-        <p className={`${poppins.className} custom-p-meet`}>
-          Meet and communicate with the best people to run projects, events or other
-          activities in a more effective and fun way
-        </p>
-      </div>
 
-      <div className='custom-div-cont-group1'>
-        {/* Botão 'Get Started' */}
-        <div className='custom-div-btn'>
-          <button className='custom-btn'>
-            <p className={`${poppins.className} custom-p-started`}>
-              Get Started
-            </p>
-          </button>
-        </div>
-          {/* Texto 'Learn More' e seta */}
-        <Link className='custom-link' href='/'>
-
-          <p className={`${poppins.className} custom-p-learn`}>
-            Learn More
-          </p>
-
-          <Image
-            src='/images/arrow.svg'
-            alt='image arrow'
-            width={40}
-            height={40}
-            className='mt-1'
-          />
-
-        </Link>
-      </div>
+      <Title />
 
       {/* Services */}
       <div className='custom-cont-div-services'>
