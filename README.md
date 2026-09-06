@@ -1,9 +1,14 @@
-# Repositório `Desafio Técnico - Full Stack Junior` 🧑🏾‍💻
+# Naranja Jobs - Plataforma de Vagas & Desafio Técnico Full Stack 🧑🏾‍💻
 
-Repositório possuí projeto desenvolvido para o `Desafio Técnico - Full Stack Junior`, para a empresa `NaranjaLabs`.
+Projeto desenvolvido originalmente para o `Desafio Técnico - Full Stack Junior` da `NaranjaLabs` e expandido para um **Case Completo de Portfólio**, integrando a interface (Hero Section e Seção de Vagas interativa) diretamente aos Route Handlers e Middleware de autenticação do **Next.js**.
 
-## Atenção 🚨 ⚠️
-Por algum motivo as rotas especificas e de post estão como `/job` ao invés de `/jobs`. Não sei se foi um erro ou uma pegadinha, mas resolvi seguir conforme as instruções.
+## 🚀 Destaques do Projeto
+
+- **Frontend & Backend Unificados:** A Hero Section agora se conecta com a listagem dinâmica de vagas (`/jobs`) e com o formulário de candidatura (`/job/submit`).
+- **Arquitetura em Camadas (SoC):** Separação estrita entre Camada de Apresentação (`components/`), Regras de Estado (`hooks/`), Data Fetching (`services/`) e Tipagem estrita (`types/`).
+- **Filtros Interativos:** Filtragem por nível de experiência (`Junior`, `Senior`, `Todos`) com requisições otimizadas.
+- **Modal de Candidatura:** Envio de dados com validação de payload, feedback de loading, sucesso e erro em tempo real.
+- **Segurança com Middleware:** Validação de cabeçalho `secret: naranja-labs` em todas as rotas protegidas da API.
 
 ## Informações pessoais
 
@@ -13,27 +18,43 @@ Por algum motivo as rotas especificas e de post estão como `/job` ao invés de 
 - Telefone: (21) 99108-1759 [![WhatsApp-logo]][WhatsApp-url]
 - Email: ludson_ps27@hotmail.com  [![Hotmail-logo]][Hotmail-url]
 
-## Informações de escolha de desenvolvimento
+## 🛠️ Tecnologias & Ferramentas
 
-- Fiz a interatividade e animação como se fosse em uma pagina real, no caso o menu está com a "borda" inferior conforme passa o mouse, também usei as mesma informações de cor, espaçamento e tamanho do hero, mesmo eu querendo colocar o tamanho da palavra toda;
-
-- A cada pagina selecionada ele altera a cor do menu selecionado, mas como não tem nenhuma pagina além da home, irá exibir not found, mas fiz como se fosse implementar no futuro.
-
-## Linguagens e ferramentas usadas
-
-[![Git][Git-logo]][Git-url]
-[![ESLint][ESLint-logo]][ESLint-url]
 [![Next.js][Next.js-logo]][Next.js-url]
-[![Tailwind-CSS][Tailwind-CSS-logo]][Tailwind-CSS-url]
 [![TypeScript][TypeScript-logo]][TypeScript-url]
+[![Tailwind-CSS][Tailwind-CSS-logo]][Tailwind-CSS-url]
+[![ESLint][ESLint-logo]][ESLint-url]
+[![Git][Git-logo]][Git-url]
 
-## O que foi desenvolvido
-   
-Em front end para provar os conhecimento em `Next.js` tinha a escolha de desenvolver um dos heroes a seguir: [Heroes](https://encurtador.com.br/buzKZ).
+## 🏗️ Arquitetura e Organização do Projeto
 
-Em Back end desenvolvi rotas utilizando Next.js.
-
-Tanto o front-end quanto o back-end foram feitos no mesmo projeto do Next.js.
+```text
+src/
+├── app/                      # Roteamento & Handlers (App Router)
+│   ├── layout.tsx            # Layout base e fontes
+│   ├── page.tsx              # Página principal (Server Component)
+│   ├── globals.css           # Design tokens e utilitários
+│   ├── jobs/                 # Route Handler: GET /jobs
+│   └── job/                  # Route Handlers: GET /job/[id] e POST /job/submit
+│
+├── components/               # Camada de Apresentação (UI)
+│   ├── hero/                 # Componentes da Hero Section (Figma)
+│   ├── jobs/                 # JobList, JobCard, JobFilters, JobModal
+│   └── ui/                   # Componentes atômicos (Badge)
+│
+├── services/                 # Comunicação com a API (Data Fetching isolado)
+│   └── jobService.ts         # Chamadas HTTP tipadas com secret embutida
+│
+├── hooks/                    # Gerenciamento de Estado Reutilizável
+│   ├── useJobs.ts            # Lógica de listagem e filtros
+│   └── useApplicationModal.ts # Controle do fluxo do modal de candidatura
+│
+├── types/                    # Definições TypeScript
+│   └── job.ts                # Interfaces de Job, Payload e Respostas
+│
+├── data/                     # Dados Mock (jobs.ts)
+└── middleware.ts             # Middleware de autenticação de rotas
+```
 
 ## Instruções para instalar e rodar
 

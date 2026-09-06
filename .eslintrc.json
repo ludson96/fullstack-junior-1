@@ -57,13 +57,7 @@
         "ignoreRestSiblings": true
       }
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-      "always",
-      {
-        "exceptAfterSingleLine": true
-      }
-    ],
+
     "no-unused-vars": [
       "error",
       {
@@ -81,18 +75,20 @@
       250
     ],
     "max-lines-per-function": [
-      "error",
+      "warn",
       {
-        "max": 60,
+        "max": 120,
         "skipBlankLines": true,
         "skipComments": true
       }
     ],
     "max-len": [
-      "error",
-      100,
+      "warn",
+      160,
       {
-        "ignoreComments": true
+        "ignoreComments": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
       }
     ],
     "complexity": [

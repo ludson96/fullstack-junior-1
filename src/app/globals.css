@@ -4,8 +4,11 @@
 
 /* Estilos globais */
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply relative w-[1920px] h-[1080px] bg-[#2B2D38]  
+    @apply relative min-h-screen bg-[#2B2D38] text-white;
   }
 }
 

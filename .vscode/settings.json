@@ -8,5 +8,6 @@
     "porange",
     "ppink",
     "ppurple"
-  ]
+  ],
+  "css.lint.unknownAtRules": "ignore"
 }
