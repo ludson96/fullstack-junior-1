@@ -3,20 +3,20 @@ import Image from 'next/image';
 // Este componente renderiza o service de Share Events.
 export default function ServiceShare() {
   return (
-    <div className='custom-cont-div-img-share'>
+    <div className='flex items-center gap-4 group cursor-default'>
+      <div className='w-16 h-16 flex-shrink-0 transition-transform group-hover:scale-105'>
+        <Image
+          src='/images/iconCalendar.svg'
+          alt='image icon share events'
+          width={64}
+          height={64}
+          className='w-16 h-16 object-contain'
+        />
+      </div>
 
-      <Image
-        src='/images/iconCalendar.svg'
-        alt='image icon build community'
-        width={64}
-        height={64}
-        className='rounded-[16px]'
-      />
-
-      <p className={'custom-p-share'}>
+      <p className='text-base font-semibold text-white max-w-[80px] leading-snug'>
         Share Events
       </p>
-
-  </div>
+    </div>
   );
 }

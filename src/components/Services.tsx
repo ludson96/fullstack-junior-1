@@ -4,15 +4,15 @@ import ServiceShare from './ServiceShare';
 
 export default function Services() {
   return (
-    <div className='custom-cont-div-services'>
-    {/* Service - Build Community */}
-    <ServiceBuild />
+    <div className='flex flex-wrap items-center gap-8 lg:gap-12 pt-4'>
+      {/* Service - Build Community */}
+      <ServiceBuild />
 
-    {/* Service - Share Events */}
-    <ServiceShare />
+      {/* Service - Share Events */}
+      <ServiceShare />
 
-    {/* Service - Get information */}
-    <ServiceGet />
-  </div>
+      {/* Service - Get information */}
+      <ServiceGet />
+    </div>
   );
 }

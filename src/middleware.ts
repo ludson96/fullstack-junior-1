@@ -16,7 +16,7 @@ export default function middleware() {
   }
 }
 
-// Configuração do middleware.
+// Configuração do middleware para rotas de API
 export const config = {
-  matcher: ['/jobs', '/job/:path*'],
+  matcher: ['/api/jobs', '/api/job/:path*'],
 };

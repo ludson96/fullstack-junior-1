@@ -1,4 +1,4 @@
-import schema from '../../../utils/validateRequest';
+import schema from '../../../../utils/validateRequest';
 
 export async function POST(request: Request) {
   try {
@@ -18,7 +18,6 @@ export async function POST(request: Request) {
 
     const { error, value } = schema.validate(JSON.parse(person));
 
-    // Se houver erro na validação, retorna uma resposta de erro
     if (error) {
       return new Response(
         JSON.stringify({ message: error.details[0].message }),
@@ -31,7 +30,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Se a validação for bem-sucedida, continua com o processamento da requisição
     return new Response(
       JSON.stringify({ message: `Thank you for your application, ${value.name}.` }),
       {
@@ -42,7 +40,6 @@ export async function POST(request: Request) {
       },
     );
   } catch (error) {
-    // Se ocorrer algum erro durante o processamento da requisição, retorna uma resposta de erro
     return new Response(
       JSON.stringify({ message: 'Internal Server Error' }),
       {

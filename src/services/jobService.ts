@@ -14,7 +14,7 @@ export async function fetchJobs(level?: string): Promise<Job[]> {
   const query = level && level !== 'Todos'
     ? `?level=${encodeURIComponent(level)}`
     : '';
-  const url = `/jobs${query}`;
+  const url = `/api/jobs${query}`;
 
   const response = await fetch(url, {
     headers: defaultHeaders,
@@ -33,7 +33,7 @@ export async function fetchJobs(level?: string): Promise<Job[]> {
  * Busca os detalhes de uma vaga específica por ID
  */
 export async function fetchJobById(id: number): Promise<Job> {
-  const response = await fetch(`/job/${id}`, {
+  const response = await fetch(`/api/job/${id}`, {
     headers: defaultHeaders,
   });
 
@@ -46,12 +46,12 @@ export async function fetchJobById(id: number): Promise<Job> {
 }
 
 /**
- * Submete a candidatura do candidato para a rota /job/submit
+ * Submete a candidatura do candidato para a rota /api/job/submit
  */
 export async function submitJobApplication(
   payload: JobApplicationPayload,
 ): Promise<JobApplicationResponse> {
-  const response = await fetch('/job/submit', {
+  const response = await fetch('/api/job/submit', {
     method: 'POST',
     headers: defaultHeaders,
     body: JSON.stringify(payload),

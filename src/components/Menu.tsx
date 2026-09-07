@@ -11,7 +11,7 @@ export default function Menu() {
 
   const [, setHoverLink] = useState(pathName);
   return (
-    <nav className={'custom-nav'}>
+    <nav className='hidden md:flex items-center gap-8 lg:gap-12'>
       {navigationData.map((data) => {
         const isActive = data.path === pathName;
         // Se a rota atual for a mesma que a rota do link, a cor do texto é branco, caso contrário, é cinza.

@@ -2,20 +2,20 @@ import Image from 'next/image';
 
 export default function ServiceGet() {
   return (
-    <div className='custom-cont-div-info'>
+    <div className='flex items-center gap-4 group cursor-default'>
+      <div className='w-16 h-16 flex-shrink-0 transition-transform group-hover:scale-105'>
+        <Image
+          src='/images/iconInfo.svg'
+          alt='image icon get information'
+          width={64}
+          height={64}
+          className='w-16 h-16 object-contain'
+        />
+      </div>
 
-      <Image
-        src='/images/iconInfo.svg'
-        alt='image icon build community'
-        width={64}
-        height={64}
-        className='flex-none order-none flex-grow-0'
-      />
-
-      <p className={'custom-p-info'}>
+      <p className='text-base font-semibold text-white max-w-[110px] leading-snug'>
         Get Information
       </p>
-
-  </div>
+    </div>
   );
 }

@@ -5,180 +5,10 @@
 /* Estilos globais */
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
   }
   body {
-    @apply relative min-h-screen bg-[#2B2D38] text-white;
-  }
-}
-
-/* MainTitle.tsx */
-@layer components {
-  .custom-div-build {
-    @apply absolute w-[784px] h-[303px] top-[216px] left-[160px]
-  }
-  
-  .custom-h1-build {
-    @apply not-italic font-bold text-[80px] leading-[101px] text-white
-  }
-}
-
-/* Subtitle.tsx */
-  @layer components {
-  .custom-div-meet {
-    @apply absolute w-[648px] h-[120px] top-[543px] left-[160px] opacity-50
-  }
-  
-  .custom-p-meet {
-    @apply text-[24px] font-normal leading-[40px] left-white
-  }
-}
-
-  /* Title */
-  @layer components {
-  .custom-div-cont-group1 {
-    @apply w-[420px] h-[60px] top-[695px] left-[160px] custom-rounded
-  }
-
-}
-
-/* Button */
-  @layer components {
-  .custom-div-btn {
-   @apply w-[240px] h-[60px] top-[695px] left-[160px] custom-rounded
-  }
-
-  .custom-btn {
-    @apply absolute w-[240px] h-[60px] top-[695px] left-[160px]  bg-[#DB2A6B] custom-rounded center-text hover:bg-red-700 duration-300 ease-in-out
-  }
-
-  .custom-p-started {
-    @apply h-[27px] text-[18px] leading-[27px] font-normal left-white w-[103px]
-  }
-}
-
-/* LearnMore */
-  @layer components {
-  .custom-link {
-    @apply absolute w-[148px] h-[40px] top-[705px] left-[432px] flex items-center justify-between
-  }
-
-  .custom-p-learn {
-    @apply h-[27px] text-[18px] font-semibold leading-[27px] left-white underline
-  }
-
-}
-
-/* Services.tsx */
-  @layer components {
-  .custom-cont-div-services {
-    @apply flex gap-[48px] absolute w-[616px] h-[64px] top-[899px] left-[160px] 
-  }
-
-}
-
-/* ServiceBuild */
-  @layer components {
-  .custom-div-community {
-    @apply flex items-center gap-[16px] w-[190px] h-[64px]
-  }
-
-  .custom-p-community {
-    @apply w-[110px] h-[54px] text-[18px] font-semibold leading-[27px] left-white
-  }
-}
-
-/* ServiceShare */
-  @layer components {
-  .custom-cont-div-img-share {
-    @apply flex gap-[16px] w-[141px] h-[64px] items-center
-  }
-
-  .custom-p-share {
-    @apply w-[61px] h-[54px] font-semibold text-[18px] leading-[27px] text-white
-  }
-}
-
-/* ServiceGet */
-  @layer components {
-  .custom-cont-div-info {
-    @apply w-[189px] h-[64px] gap-[16px] flex flex-row items-center p-0
-  }
-
-  .custom-p-info {
-    @apply w-[109px] h-[54px] text-[18px] font-semibold leading-[27px] left-white
-  }
-}
-
-/* PersonImage */
-  @layer components {
-  .custom-img-pblue {
-    @apply custom-abs-w h-[240px] top-[174px] left-[1248px]
-  }
-
-  .custom-img-ppurple {
-    @apply custom-abs-w h-[509px] top-[174px] left-[976px]
-  }
-
-  .custom-img-ppink {
-    @apply custom-abs-w h-[240px] top-[715px] left-[976px]
-  }
-
-  .custom-img-porange {
-    @apply custom-abs-w h-[509px] top-[446px] left-[1248px]
-  }
-
-  .custom-img-yellow {
-    @apply custom-abs-w h-[509px] top-[310px] left-[1520px]
-  }
-}
-
-/* Elipses */
-  @layer components {
-  .custom-cont-div-ellipse {
-    @apply absolute w-[949px] h-[906px] top-[174px] left-[971px] overflow-hidden 
-  }
-
-  .custom-div-medium-ellipse {
-    @apply absolute w-[850px] h-[850px] left-[246px] top-[366px] opac-z-10
-  }
-
-  .custom-ellipse {
-    @apply w-full h-full border border-solid border-[#E1E1E1] rounded-full
-  }
-
-  .custom-div-big-ellipse {
-    @apply absolute w-[1102px] h-[1102px] left-[0px] top-[89px] opac-z-10
-  }
-}
-
-/* Head.tsx */
-  @layer components {
-  .custom-header {
-    @apply w-[1920px] h-[120px] rounded-r-lg
-  }
-
-  .custom-head-cont-div-title {
-    @apply absolute w-[235px] h-[45px] top-[37px] left-[160px] gap-0
-  }
-
-  .custom-head-p-title {
-    @apply text-red-500 font-bold text-[36px] leading-[45.25px] text-left
-  }
-
-  .custom-head-cont-div-img-menu {
-    @apply absolute w-[24px] h-[24px] top-[48px] left-[1736px]
-  }
-}
-
-/* Menu.tsx */
-  @layer components {
-  .custom-nav {
-    @apply flex absolute w-[519px] h-[27px] top-[46px] left-[1137px] gap-[48px]
-  }
-
-  .custom-nav-link {
-    @apply text-[18px] font-normal leading-[27px] text-left
+    @apply relative min-h-screen bg-[#2B2D38] text-white overflow-x-hidden;
   }
 }
 
@@ -186,50 +16,27 @@
 @layer components {
   .hover-underline-animation {
     position: relative;
-    color: #DB2A6B;
-    padding-bottom: 20px;
+    padding-bottom: 6px;
   }
 
   .hover-underline-animation::after {
     content: "";
     position: absolute;
-    width: 32px;
-    height: 4px;
+    width: 24px;
+    height: 3px;
     transform: scaleX(0);
-    bottom: -12px;
-    left: 0;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -12px;
     background-color: #DB2A6B;
-    transform-origin: bottom right;
+    transform-origin: center;
     transition: transform 0.25s ease-out;
-    border-radius: 6px;
+    border-radius: 4px;
   }
 
-  .hover-underline-animation:hover::after {
-    position: absolute;
+  .hover-underline-animation:hover::after,
+  .hover-underline-animation.active::after {
     transform: scaleX(1);
-    transform-origin: bottom left;
   }
 }
 
-/* Reutilizados */
-@layer utilities {
-  .left-white {
-    @apply text-left text-[#FFFFFF]
-  }
-  
-  .center-text {
-    @apply flex items-center justify-center
-  }
-
-  .custom-rounded {
-    @apply rounded-tl-[16px] rounded-tr-[16px] rounded-br-[16px]
-  }
-
-  .custom-abs-w {
-    @apply absolute w-[240px]
-  }
-
-  .opac-z-10 {
-    @apply -z-10 opacity-25
-  }
-}

@@ -17,8 +17,8 @@ const navigationData = [
   },
   {
     id: '4',
-    name: 'Jobs',
-    path: '#jobs-section',
+    name: 'Contact',
+    path: '/contact',
   },
   {
     id: '5',

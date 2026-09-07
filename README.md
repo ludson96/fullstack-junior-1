@@ -32,10 +32,13 @@ Projeto desenvolvido originalmente para o `Desafio Técnico - Full Stack Junior`
 src/
 ├── app/                      # Roteamento & Handlers (App Router)
 │   ├── layout.tsx            # Layout base e fontes
-│   ├── page.tsx              # Página principal (Server Component)
+│   ├── page.tsx              # Página principal (Hero Section)
 │   ├── globals.css           # Design tokens e utilitários
-│   ├── jobs/                 # Route Handler: GET /jobs
-│   └── job/                  # Route Handlers: GET /job/[id] e POST /job/submit
+│   ├── jobs/                 # Página dedicada: /jobs (UI de Carreiras)
+│   │   └── page.tsx
+│   └── api/                  # Route Handlers protegidos por Middleware
+│       ├── jobs/             # GET /api/jobs
+│       └── job/              # GET /api/job/[id] e POST /api/job/submit
 │
 ├── components/               # Camada de Apresentação (UI)
 │   ├── hero/                 # Componentes da Hero Section (Figma)
@@ -53,7 +56,7 @@ src/
 │   └── job.ts                # Interfaces de Job, Payload e Respostas
 │
 ├── data/                     # Dados Mock (jobs.ts)
-└── middleware.ts             # Middleware de autenticação de rotas
+└── middleware.ts             # Middleware de autenticação (/api/*)
 ```
 
 ## Instruções para instalar e rodar
