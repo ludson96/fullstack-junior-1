@@ -19,13 +19,13 @@ export default function Menu() {
 
         return (
           <Link
-          key={data.id}
-          href={data.path}
-          className={`custom-nav-link hover-underline-animation ${isSelect}`}
-          // Quando o mouse passa por cima do link, realiza a animação de underline.
-          onMouseOver={() => setHoverLink(data.path)}
-          // Quando o mouse sai de cima do link, a animação se move para a direita.
-          onMouseLeave={() => setHoverLink(pathName)}
+            key={data.id}
+            href={data.path}
+            className={`text-lg font-normal leading-[27px] hover-underline-animation ${isSelect} ${isActive ? 'active' : ''}`}
+            // Quando o mouse passa por cima do link, realiza a animação de underline.
+            onMouseOver={() => setHoverLink(data.path)}
+            // Quando o mouse sai de cima do link, a animação se move para a direita.
+            onMouseLeave={() => setHoverLink(pathName)}
           >
             {data.name}
           </Link>
