@@ -42,8 +42,8 @@ O projeto foi expandido para um **case completo de portfólio**, eliminando limi
 
 ## 🌐 Deploy da Aplicação / Demonstração Online
 
-- **URL da Aplicação:** *(Em breve / adicione o link do Vercel aqui)*
-- **Coleção de Requisições:** Acompanha arquivo exportado [`collection_Naranja Labs.json`](./collection_Naranja%20Labs.json) pronto para uso com [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) ou [Postman](https://www.postman.com/).
+Acesse a aplicação em produção:
+👉 **[NaranjaLabs](https://fullstack-junior-1.vercel.app/)**
 
 ## ⚡ API Endpoints
 
