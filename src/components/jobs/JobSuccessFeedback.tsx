@@ -13,7 +13,7 @@ export default function JobSuccessFeedback({
 }: JobSuccessFeedbackProps) {
   return (
     <div className="mt-8 text-center py-6">
-      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl">
+      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#2E7D32] flex items-center justify-center text-white text-2xl font-bold">
         ✓
       </div>
       <h3 className="text-xl font-bold text-white mb-2">

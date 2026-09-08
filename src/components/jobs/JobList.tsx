@@ -26,9 +26,6 @@ export default function JobList() {
   return (
     <section id="jobs-section" className="relative z-20 max-w-6xl mx-auto px-6 py-24 scroll-mt-10">
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#DB2A6B]/15 text-[#FF5B99] border border-[#DB2A6B]/30 mb-4">
-          Carreiras & Oportunidades
-        </span>
         <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
           Faça parte da nossa equipe
         </h2>

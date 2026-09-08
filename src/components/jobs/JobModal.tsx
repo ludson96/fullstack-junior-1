@@ -46,8 +46,8 @@ export default function JobModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md">
-      <div className="relative w-full max-w-lg p-6 sm:p-8 bg-[#1f2029] border border-white/10 rounded-3xl shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80">
+      <div className="relative w-full max-w-lg p-6 sm:p-8 bg-[#20222B] border border-[#333644] rounded-3xl shadow-2xl">
         <div className="flex items-start justify-between">
           <div>
             <span className="text-xs font-mono uppercase tracking-wider text-[#DB2A6B]">
@@ -70,7 +70,7 @@ export default function JobModal({
         ) : (
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
             {errorMessage && (
-              <div className="p-3 bg-red-500/10 border border-red-500/20 text-red-400 text-sm rounded-xl">
+              <div className="p-3 bg-[#7F1D1D] text-white font-medium text-sm rounded-xl">
                 {errorMessage}
               </div>
             )}

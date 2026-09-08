@@ -8,11 +8,10 @@ interface JobCardProps {
 }
 
 const cardContainerClass = 'group relative flex flex-col justify-between p-6 rounded-2xl'
-  + ' bg-white/[0.03] border border-white/10 hover:border-[#DB2A6B]/50'
-  + ' transition-all duration-300 hover:shadow-2xl hover:shadow-[#DB2A6B]/10 backdrop-blur-md';
+  + ' bg-[#22242D] border border-[#333644] hover:border-[#4B5563]'
+  + ' transition-colors duration-200';
 
-const btnActiveClass = 'bg-[#DB2A6B] hover:bg-[#b81d54] text-white shadow-md'
-  + ' shadow-[#DB2A6B]/20 active:scale-95';
+const btnActiveClass = 'bg-[#DB2A6B] hover:bg-[#b81d54] text-white active:scale-95';
 
 export default function JobCard({ job, onApply }: JobCardProps) {
   const isOpen = job.status.toLowerCase() === 'open';

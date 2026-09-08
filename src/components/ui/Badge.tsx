@@ -7,11 +7,11 @@ interface BadgeProps {
 }
 
 const variantStyles: Record<string, string> = {
-  junior: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-  senior: 'bg-purple-500/10 text-purple-400 border-purple-500/20',
-  open: 'bg-[#DB2A6B]/15 text-[#FF5B99] border-[#DB2A6B]/30',
-  closed: 'bg-gray-500/10 text-gray-400 border-gray-500/20',
-  default: 'bg-white/10 text-gray-300 border-white/10',
+  junior: 'bg-[#3B3E4C] text-[#E2E8F0]',
+  senior: 'bg-[#4B5563] text-white',
+  open: 'bg-[#2E7D32] text-white',
+  closed: 'bg-[#1E2028] text-[#94A3B8]',
+  default: 'bg-[#3B3E4C] text-white',
 };
 
 export default function Badge({
@@ -20,8 +20,8 @@ export default function Badge({
   className = '',
 }: BadgeProps) {
   const currentVariant = variantStyles[variant] || variantStyles.default;
-  const baseClasses = 'inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold'
-    + ' tracking-wider uppercase border backdrop-blur-sm transition-all duration-200';
+  const baseClasses = 'inline-flex items-center px-3 py-1 rounded-md text-xs font-semibold'
+    + ' tracking-wide uppercase transition-colors';
 
   return (
     <span className={`${baseClasses} ${currentVariant} ${className}`}>

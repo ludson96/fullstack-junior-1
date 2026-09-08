@@ -7,23 +7,18 @@ const navigationData = [
   },
   {
     id: '2',
-    name: 'Features',
-    path: '/features',
+    name: 'Vagas',
+    path: '/jobs',
   },
   {
     id: '3',
-    name: 'Blog',
-    path: '/blog',
+    name: 'Consultar',
+    path: '/job-details',
   },
   {
     id: '4',
-    name: 'Contact',
-    path: '/contact',
-  },
-  {
-    id: '5',
-    name: 'About Us',
-    path: '/about',
+    name: 'Candidatar',
+    path: '/submit-application',
   },
 ];
 

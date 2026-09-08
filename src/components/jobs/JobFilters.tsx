@@ -7,7 +7,7 @@ interface JobFiltersProps {
 
 const LEVELS = ['Todos', 'Junior', 'Senior'];
 
-const activeClass = 'bg-[#DB2A6B] text-white shadow-lg shadow-[#DB2A6B]/30 scale-105';
+const activeClass = 'bg-[#DB2A6B] text-white scale-105';
 const inactiveClass = 'bg-white/5 text-gray-400 hover:bg-white/10'
   + ' hover:text-white border border-white/5';
 
