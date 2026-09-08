@@ -40,7 +40,7 @@ O projeto foi expandido para um **case completo de portfólio**, eliminando limi
   <img src="public/images/projeto.gif" alt="Demonstração do App" width="100%" />
 </div>
 
-## 🌐 Deploy da Aplicação / Demonstração Online
+## 🌐 Deploy da Aplicação
 
 Acesse a aplicação em produção:
 👉 **[NaranjaLabs](https://fullstack-junior-1.vercel.app/)**

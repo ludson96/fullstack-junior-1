@@ -40,7 +40,7 @@ The project was evolved into a **complete portfolio case study**, removing fixed
   <img src="public/images/projeto.gif" alt="App Demonstration" width="100%" />
 </div>
 
-## 🌐 Live Deployment / Online Demonstration
+## 🌐 Live Deployment
 
 Access the live application in production:
 👉 **[NaranjaLabs](https://fullstack-junior-1.vercel.app/)**
