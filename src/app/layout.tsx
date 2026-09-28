@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className}`}>
-        <div className="fixed top-0 left-0 w-full z-30">
+        <div className="fixed top-0 left-0 w-full z-50">
           <ServerNoticeBanner />
         </div>
         <Head />
