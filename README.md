@@ -5,7 +5,6 @@
 [![TypeScript 5](https://img.shields.io/badge/TypeScript-5.0-3178C6.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS 3](https://img.shields.io/badge/Tailwind_CSS-3.3.0-38B2AC.svg?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![ESLint Airbnb](https://img.shields.io/badge/ESLint-Airbnb_Strict-4B3263.svg?style=for-the-badge&logo=eslint)](https://eslint.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 > 🇧🇷 **Português** | 🇺🇸 [**English Version**](README.en.md)
 
@@ -23,7 +22,6 @@ Aplicação Web Full Stack de alta performance construída com **Next.js 14 (App
 - [📁 Estrutura do Repositório](#-estrutura-do-repositório)
 - [💡 Decisões Técnicas](#-decisões-técnicas)
 - [🚀 Como Executar o Projeto](#-como-executar-o-projeto)
-- [📄 Licença](#-licença)
 
 ## 📝 Sobre o Projeto
 
@@ -264,10 +262,6 @@ fullstack-junior-1/
 | `npm run build` | Compila e gera o build de produção otimizado com TypeScript e Linting |
 | `npm run start` | Inicia o servidor em modo de produção (após o build) |
 | `npm run lint` | Executa o linter ESLint (Airbnb) para validação do código |
-
-## 📄 Licença
-
-Este projeto está licenciado sob os termos da licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
 
 <div align="center">
   Desenvolvido por <strong>Ludson Pereira dos Santos</strong> 🚀<br />
